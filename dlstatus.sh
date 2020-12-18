@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# method to ping check and print result
 ping_and_check_result () {
   ping $1 -c 1 -w 1 > /dev/null 2>&1
   if [ $? -eq 0 ]; then
